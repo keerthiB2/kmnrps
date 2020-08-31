@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% load static %}
+ <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>About</title>
+    <link rel="stylesheet" href="{%static "css/about.css" %}">
+    <style>
+    .navbar-brand
+   {
+       position: relative;
+
+       float: left;
+       padding: 5px 5px;
+       font-size: 19px;
+       line-height: 21px;
+       height: 62px;
+       max-width: 220px;
+       display: table;
+
+       /*height: auto;*/
+       width: auto;
+       max-height: 72px;
+       /*max-width: 250px;*/
+   }
+    body{
+
+
+background-image:  url(https://images.unsplash.com/photo-1491960693564-421771d727d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=699&q=80);
+
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+ }
+ </style>
+  </head>
+<body>
+   <nav class="navbar navbar-inverse" role="navigation">
+       <div class="container-fluid">
+         <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white"><i class="fa fa-bars" style="font-size:80px;"></i>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="/hello">  <img src="{%static "images/logo2.PNG" %}"></a>
+        <!--  <a class="navbar-brand" href="/hello"><font size="+5"><b><em><i>KMNRPS<sub> Restaurant</sub></b></em></i></font></a>-->
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home">Home</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/about">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/aboutres">About Restaurant</a></li>
+          <li><a href="/aboutteam">About Team</a></li>
+
+        </ul>
+      </li>
+          <li><a href="/menu">Menu</a></li>
+          <!--<li><a href="/gallery">Gallery</a></li>-->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+
+      <ul class="dropdown-menu">
+        <li><a href="/standupcomedy">Stand Up comedy</a></li>
+        <li><a href="/liveconcert">Live Concert</a></li>
+        <li><a href="/partynight">Party Night</a></li>
+        <li><a href="/specialevent">Special events</a></li>
+      </ul>
+    </li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/reservation">Reservation</a></li>
+          <li><a href="/orderonline">Order Online</a></li>
+        </ul>
+     </div>
+    </nav>
+<center>
+    <p style="font-size:50px; color:Cornsilk;"><i><b>Opening Hours</b></i></p><br>
+    <p style="font-size:25px; color:khaki;"><i><b>Lunch: </b></i> Monday - Friday 11am to  3pm  </p><br>
+    <p style="font-size:25px; color:khaki;"><i><b>Brunch: </b></i> Monday - Friday 12pm to  4pm and on saturday and Sunday 11am to 4pm </p><br>
+    <p style="font-size:25px; color:khaki;"><i><b>Dinner: </b></i> Monday - Friday 7pm to  10pm  and on saturday and sunday 6pm to 11pm</p><br></center>
+<div class="ourstory">
+
+
+
+	<div class="row" style="border:none; background:black; height:500px;">
+		<div class="col-xs-6">
+			<img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" style="height:500px; margin-left:-120px;" />
+		</div>
+		<div class="col-xs-6">
+		<center>	<p style="font-size:50px; color:SlateGrey;">    OUR STORY   </p></center>
+			<p style="font-size:25px; color:DarkseaGreen;"><i>--->At KMNRPS, we believe in evrything at its prime.Our focus is to bring the best and most responsibly sourced ingredients to the table.<br><br>--->   We started our journey with a small idea to provide delicious and quality food of Telangana with the minimum cost.<br><br>--->   It was a success from the start but quickly became something even bigger...<b>Game Chnager.</b></i></p>
+
+		</div>
+	</div>
+
+  <div class="row" style="border:none; background:black; height:500px;">
+    <div class="col-xs-6">
+    <center>	<p style="font-size:50px; color:SlateGrey;">    We Promise you that we provide  </p></center>
+    <center>
+    <section>
+      <p style="font-size:35px; color:Seagreen;"><i><b>Delicious</b></i></p><br>
+      <p style="font-size:20px; color:PeachPuff;"><i>Craveable & satisfying flavours</i></p><hr>
+    </section>
+    <section>
+      <p style="font-size:35px; color:Seagreen;"><i><b>Nutricious</b></i></p><br>
+      <p style="font-size:20px; color:PeachPuff;"><i>Super-charged ingredients & healthy swaps</i></p><hr>
+    </section>
+    <section>
+      <p style="font-size:35px; color:Seagreen;"><i><b>Protien Packed</b></i></p>
+      <p style="font-size:20px; color:PeachPuff;"><i>15+ grams of protein in every entry</i></p>
+    </section>
+  </center>
+    </div>
+    <div class="col-xs-6">
+      <img src="https://images.unsplash.com/photo-1551218372-a8789b81b253?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" style="height:500px;width:100%; margin-right:-120px;" />
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+  </body>
+  </html>

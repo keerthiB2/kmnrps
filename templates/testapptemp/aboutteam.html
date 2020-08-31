@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+{% load static %}
+ <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>About</title>
+    <link rel="stylesheet" href="{%static "css/about.css" %}">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.navbar-brand
+{
+   position: relative;
+
+   float: left;
+   padding: 5px 5px;
+   font-size: 19px;
+   line-height: 21px;
+   height: 62px;
+   max-width: 220px;
+   display: table;
+
+   /*height: auto;*/
+   width: auto;
+   max-height: 72px;
+   /*max-width: 250px;*/
+}
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+</style>
+  </head>
+ <body>
+   <nav class="navbar navbar-inverse" role="navigation">
+       <div class="container-fluid">
+         <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white"><i class="fa fa-bars" style="font-size:80px;"></i>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="/hello">  <img src="{%static "images/logo2.PNG" %}"></a>
+        <!--  <a class="navbar-brand" href="/hello"><font size="+5"><b><em><i>KMNRPS<sub> Restaurant</sub></b></em></i></font></a>-->
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home">Home</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/about">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/aboutres">About Restaurant</a></li>
+          <li><a href="/aboutteam">About Team</a></li>
+
+        </ul>
+      </li>
+          <li><a href="/menu">Menu</a></li>
+          <!--<li><a href="/gallery">Gallery</a></li>-->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+
+      <ul class="dropdown-menu">
+        <li><a href="/standupcomedy">Stand Up comedy</a></li>
+        <li><a href="/liveconcert">Live Concert</a></li>
+        <li><a href="/partynight">Party Night</a></li>
+        <li><a href="/specialevent">Special events</a></li>
+      </ul>
+    </li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/reservation">Reservation</a></li>
+          <li><a href="/orderonline">Order Online</a></li>
+        </ul>
+     </div>
+    </nav>
+    <div class="container">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa4a3171-7f45-407e-aa9b-d0053b15e9ef/dbtkdkg-8f6b2992-834a-47dd-8166-eb1acf5b556f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYWE0YTMxNzEtN2Y0NS00MDdlLWFhOWItZDAwNTNiMTVlOWVmXC9kYnRrZGtnLThmNmIyOTkyLTgzNGEtNDdkZC04MTY2LWViMWFjZjViNTU2Zi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.mSey3pVBrO2K3U-Aaey0d_IfXm5OCCmOvw-lhdaqdqg" alt="girlgang" style="width:100%;">
+      <div class="content">
+      <center>  <h1>V6</h1></center>
+        <p style="font-size:20px; color:red;">We are the B.Tech graduates at JNTUHCEJ college from different Streams.We started this restaurant to overcome the problem of providing poor quality food near the surroundings of our college.</p>
+      </div>
+    </div>
+
+    <div class="row" style="border:none; background:black; height:400px;">
+      <div class="col-xs-6">
+        <img src="https://images.unsplash.com/photo-1516898671633-efce17ccb6e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80" style="height:400px; margin-left:100px;" />
+      </div>
+      <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="col-xs-6" align="center">
+      <center>	<p style="font-size:50px; color:Crimson;">    KEERTHI BAIRI  </p><br>
+        <p style="font-size:25px; color:Cyan;"><i>Owner & Founder</i></p>
+      </center>
+      </div>
+    </center>
+    </div>
+    <div class="row" style="border:none; background:black; height:400px;">
+      <center>
+      <div class="col-xs-6">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+      <center>	<p style="font-size:50px; color:Crimson;">  NIDA MAHEVEEN  </p><br>
+        <p style="font-size:25px; color:Cyan;"><i>Chef</i></p>
+      </center>
+      </div>
+    </center>
+      <div class="col-xs-6">
+        <img src="https://images.unsplash.com/photo-1548343874-ea7b35b1fd4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1191&q=80" style="height:400px; margin-right:-120px;" />
+      </div>
+
+    </div>
+    <div class="row" style="border:none; background:black; height:400px;">
+      <div class="col-xs-6">
+        <img src="https://test-storage-mumbai.s3.amazonaws.com/uploads/image/file/7526/angled-arc-eyebrows.jpg" style="height:400px; margin-left:100px;" />
+      </div>
+      <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="col-xs-6" align="center">
+      <center>	<p style="font-size:50px; color:Crimson;">   MEGHANA KOTA  </p><br>
+        <p style="font-size:25px; color:Cyan;"><i>Designer & Architect</i></p>
+      </center>
+      </div>
+    </center>
+    </div>
+    <div class="row" style="border:none; background:black; height:400px;">
+      <center>
+      <div class="col-xs-6">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+      <center>	<p style="font-size:50px; color:Crimson;">  PRATHYUSHA AGGARS  </p><br>
+        <p style="font-size:25px; color:Cyan;"><i>Business Partner</i></p>
+      </center>
+      </div>
+    </center>
+      <div class="col-xs-6">
+        <img src="https://images.unsplash.com/photo-1569124589354-615739ae007b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="height:400px; margin-right:-120px;" />
+      </div>
+
+    </div>
+    <div class="row" style="border:none; background:black; height:400px;">
+      <div class="col-xs-6">
+        <img src="https://livewire.thewire.in/wp-content/uploads/2020/05/Screen-Shot-2020-05-15-at-5.06.35-PM.png" style="height:400px; margin-left:100px;" />
+      </div>
+      <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="col-xs-6" align="center">
+      <center>	<p style="font-size:50px; color:Crimson;">    SHRIYA KALAVA </p><br>
+        <p style="font-size:25px; color:Cyan;"><i>Quality Manager</i></p>
+      </center>
+      </div>
+    </center>
+    </div>
+    <div class="row" style="border:none; background:black; height:400px;">
+      <center>
+      <div class="col-xs-6">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+      <center>	<p style="font-size:50px; color:Crimson;"> RAMYA RAPARTHI  </p><br>
+        <p style="font-size:25px; color:Cyan;"><i>Event Organizer</i></p>
+      </center>
+      </div>
+    </center>
+      <div class="col-xs-6">
+        <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-ol5g05ipdb787sgea12m6n4ck0-20190609234845.jpeg" style="height:400px; margin-right:-120px;" />
+      </div>
+
+    </div>
+
+
+  </body>
+  </html>

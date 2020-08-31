@@ -1,0 +1,14 @@
+
+    body{
+      background: black;
+
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    }
+ .mySlides {display:none;
+       background-size: cover;
+
+       }

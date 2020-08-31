@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <title>About</title>
+   <link rel="stylesheet" href="{%static "css/about.css" %}">
+ </head>
+<body>
+  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white"><i class="fa fa-bars" style="font-size:80px;"></i>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img src="{%static "images/logo2.PNG" %}">
+          <!--<a class="navbar-brand" href="/hello"><font size="+5"><b><em><i>KMNRPS<sub> Restaurant</sub></b></em></i></font></a>-->
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home">Home</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/about">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/aboutres">About Restaurant</a></li>
+          <li><a href="/aboutteam">About Team</a></li>
+
+        </ul>
+      </li>
+          <li><a href="/menu">Menu</a></li>
+        <!--  <li><a href="/gallery">Gallery</a></li>-->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+
+      <ul class="dropdown-menu">
+        <li><a href="/standupcomedy">Stand Up comedy</a></li>
+        <li><a href="/liveconcert">Live Concert</a></li>
+        <li><a href="/partynight">Party Night</a></li>
+        <li><a href="/specialevent">Special events</a></li>
+      </ul>
+    </li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/reservation">Reservation</a></li>
+          <!--<li><a href="/orderonline">Order Online</a></li>-->
+        </ul>
+     </div>
+    </nav>
+
+
+
+
+  </body>
+  </html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load static %}
+ <html lang="en">
+ <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/8f9d3a00c7.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <title>contact us</title>
+      <link rel="stylesheet" href="contact.css">
+
+   </head>
+   <style>
+   .navbar-brand
+  {
+      position: relative;
+
+      float: left;
+      padding: 5px 5px;
+      font-size: 19px;
+      line-height: 21px;
+      height: 62px;
+      max-width: 220px;
+      display: table;
+
+      /*height: auto;*/
+      width: auto;
+      max-height: 72px;
+      /*max-width: 250px;*/
+  }
+   body{
+  background-image: url(https://www.ottomate.com/media/wysiwyg/shutterstock_311546150_1.jpg);
+
+
+
+ background-color: black;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ /*background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;*/
+}
+.contact-information{
+  padding : 200px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 50%; /* Full width */
+  padding: 0px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 0px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 0px; /* Add a top margin */
+  margin-bottom: 0px; /* Bottom margin */
+ /* resize: vertical  Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height:10%;
+  width:40%;
+  float:left;
+
+}
+input {
+    display: block;
+}
+</style>
+   <body>
+     <div class="navigation">
+       <nav class="navbar navbar-inverse" role="navigation">
+           <div class="container-fluid">
+             <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white"><i class="fa fa-bars" style="font-size:50px;"></i>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              <a class="navbar-brand" href="/hello">  <img src="{%static "images/logo2.PNG" %}"></a>
+              <!--<a class="navbar-brand" href="/hello"><font size="+5"><b><em><i>KMNRPS<sub> Restaurant</sub></b></em></i></font></a>-->
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/home">Home</a></li>
+
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/about">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/aboutres">About Restaurant</a></li>
+          <li><a href="/aboutteam">About Team</a></li>
+
+        </ul>
+      </li>
+              <li><a href="/menu">Menu</a></li>
+              <!--<li><a href="/gallery">Gallery</a></li>-->
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="/standupcomedy">Stand Up comedy</a></li>
+            <li><a href="/liveconcert">Live Concert</a></li>
+            <li><a href="/partynight">Party Night</a></li>
+            <li><a href="/specialevent">Special events</a></li>
+          </ul>
+        </li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/reservation">Reservation</a></li>
+              <li><a href="/orderonline">Order Online</a></li>
+            </ul>
+         </div>
+        </nav>
+</div>
+<footer>
+    <div class="contact-information">
+      <section>
+    <center> <font size="+8" color="Black"><b><u><i>Contact Us:</i></u></b></font></center>
+	<br>
+	<br>
+	<br>
+   </section>
+   <center><font size="+3" color="black"><i>We'd love to help!</i></center>
+     <center><font size="+2" color="black"><i>We like to create things with fun,open-minded people.Feel free to say hello!</i></center>
+
+       <div class="col-sm-6" >
+         <form method="post" action="/contact_form_submission/" >
+           {% csrf_token %}
+		 <p>
+           <input type="text" name="name" placeholder=" Your Name...." width="100" height="48"/></p>
+		   <p>
+           <input type="text" name="email" placeholder=" Your Email...." width="100" height="48"/></p>
+		   <p>
+           <textarea rows="3" name="message" placeholder=" Your Message...."></textarea></p>
+           <button type="submit" class="btn btn-primary">Submit</button>
+
+         </form>
+
+   </div>
+   <div class="col-sm-6" >
+        <p>
+			<i class="material-icons" style="font-size:28px">location_on</i>&nbsp Opposite of JNTUHCEJ , Nachupally ,Jagitial</p>
+			<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp 99999999999</p>
+			<p><i class="fa fa-envelope" style="font-size:24px"></i>&nbsp keerthibairi8@gmail.com</p>
+			<hr>
+			<a href="http://www.instagram.com" title="instagram"><i class="fa fa-instagram" style="font-size:24px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<a href="http://www.facebook.com" title="facebook"><i class="fa fa-facebook-f" style="font-size:24px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="http://www.linkedin.com" title="linkedin"><i class="fa fa-linkedin-square" style="font-size:24px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="http://www.twitter.com" title="twitter"><i class="fa fa-twitter" style="font-size:24px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+
+   </div>
+   <center>
+   <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jntuhcej,nachupally,jagitial+(KMNRPS%20Restaurant)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm">Plan a Journey</a></div>
+</center>
+   </footer>
+</body>
+</html>

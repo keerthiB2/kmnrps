@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+ <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Menu</title>
+    <!--<link rel="stylesheet" href="{%static "css/about.css" %}">-->
+
+    <style>
+    .navbar-brand
+   {
+       position: relative;
+
+       float: left;
+       padding: 5px 5px;
+       font-size: 19px;
+       line-height: 21px;
+       height: 62px;
+       max-width: 220px;
+       display: table;
+
+       /*height: auto;*/
+       width: auto;
+       max-height: 72px;
+       /*max-width: 250px;*/
+   }
+    body{
+   background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+ }
+    .img-fluid {
+  max-width: 80%;
+  height: auto
+}
+    </style>
+  </head>
+ <body>
+   <nav class="navbar navbar-inverse" role="navigation">
+       <div class="container-fluid">
+         <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white"><i class="fa fa-bars" style="font-size:80px;"></i>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="/hello">  <img src="{%static "images/logo2.PNG" %}"></a>
+        <!--  <a class="navbar-brand" href="/hello"><font size="+5"><b><em><i>KMNRPS<sub> Restaurant</sub></b></em></i></font></a>-->
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home">Home</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/about">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/aboutres">About Restaurant</a></li>
+          <li><a href="/aboutteam">About Team</a></li>
+
+        </ul>
+      </li>
+          <li><a href="/menu">Menu</a></li>
+        <!--  <li><a href="/gallery">Gallery</a></li>-->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+
+      <ul class="dropdown-menu">
+        <li><a href="/standupcomedy">Stand Up comedy</a></li>
+        <li><a href="/liveconcert">Live Concert</a></li>
+        <li><a href="/partynight">Party Night</a></li>
+        <li><a href="/specialevent">Special events</a></li>
+      </ul>
+    </li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/reservation">Reservation</a></li>
+          <li><a href="/orderonline">Order Online</a></li>
+        </ul>
+     </div>
+    </nav>
+<center><p><font size="+2" color="GreenYellow" ><i>Every item in the menu costs same amount i.e. Rs.100/- </i></font></p>
+<p><font size="+5" color="GreenYellow"><b><i>Our Menu</i></b></font></p></center>
+<div class="menu-images">
+
+                              <img src="{%static "images/menu1.PNG" %}" class=="img-fluid" width="100%">
+                              <img src="{%static "images/menu2.PNG" %}" class=="img-fluid" width="100%">
+                              <img src="{%static "images/menu3.PNG" %}" class=="img-fluid" width="100%">
+                              <img src="{%static "images/menu4.PNG" %}" class=="img-fluid" width="100%">
+                              <img src="{%static "images/menu5.PNG" %}" class=="img-fluid" width="100%">
+                              <img src="{%static "images/menu6.PNG" %}" class=="img-fluid" width="100%">
+                              <img src="{%static "images/menu7.PNG" %}" class=="img-fluid" width="100%">
+
+
+</div>
+  </body>
+  </html>

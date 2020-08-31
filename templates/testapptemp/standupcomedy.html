@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load static %}
+ <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Event</title>
+    <link rel="stylesheet" href="{%static "css/about.css" %}">
+    <style>
+    body{
+
+background-image: url(https://images.unsplash.com/photo-1552900213-6c202f667e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1236&q=8);
+
+
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+ }
+ .navbar-brand
+{
+    position: relative;
+
+    float: left;
+    padding: 5px 5px;
+    font-size: 19px;
+    line-height: 21px;
+    height: 62px;
+    max-width: 220px;
+    display: table;
+
+    /*height: auto;*/
+    width: auto;
+    max-height: 72px;
+    /*max-width: 250px;*/
+}
+ .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+ </style>
+  </head>
+ <body>
+   <nav class="navbar navbar-inverse" role="navigation">
+       <div class="container-fluid">
+         <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color:white"><i class="fa fa-bars" style="font-size:80px;"></i>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="/hello">  <img src="{%static "images/logo2.PNG" %}"></a>
+        <!--  <a class="navbar-brand" href="/hello"><font size="+5"><b><em><i>KMNRPS<sub> Restaurant</sub></b></em></i></font></a>-->
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home">Home</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/about">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/aboutres">About Restaurant</a></li>
+          <li><a href="/aboutteam">About Team</a></li>
+
+        </ul>
+      </li>
+          <li><a href="/menu">Menu</a></li>
+        <!--  <li><a href="/gallery">Gallery</a></li>-->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+
+      <ul class="dropdown-menu">
+        <li><a href="/standupcomedy">Stand Up comedy</a></li>
+        <li><a href="/liveconcert">Live Concert</a></li>
+        <li><a href="/partynight">Party Night</a></li>
+        <li><a href="/specialevent">Special events</a></li>
+      </ul>
+    </li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/reservation">Reservation</a></li>
+          <li><a href="/orderonline">Order Online</a></li>
+        </ul>
+     </div>
+    </nav>
+
+<p style="font-size:25px"><font color="red">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWe conduct Standup Comedy on Every Friday Night from 8:00PM to 9:00PM IST Kolkata Timings </font></p>
+
+
+<div class="container">
+  <img src="https://amtshows.com/wp-content/uploads/2014/05/stand-up-comedy-neon-sign.jpg" style="width:50%"/>
+
+
+
+  <br>
+  <br>
+
+<p style="font-size:25px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBy: </p>
+<p style="font-size:20px"><font color="MediumTurquoise">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAishwarya Rajesh</font> </p>
+<p style="font-size:20px"><font color="MediumTurquoise">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUruj</font></p>
+<p style="font-size:20px"><font color="MediumTurquoise">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspKenny Sebastian</font> </p>
+</div>
+
+  </body>
+  </html>
